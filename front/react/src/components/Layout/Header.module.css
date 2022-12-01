@@ -1,0 +1,94 @@
+.eslogo-box{
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+}
+
+.search-box {
+    position: absolute;
+    left: 50%;
+    margin-top: 60px;
+    transform: translate(-50%, -50%);
+    background-color: #949BA0;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px; 
+  }
+  
+  .search-btn {
+    color: #EDEDED;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #949BA0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-txt {
+    float: left;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    width: 0; 
+    transition: 0.5s; 
+  }
+  
+  .search-box:hover > form .search-txt {
+    width: 200px;
+  }
+  
+  .search-box:hover > form .search-btn {
+    background: #464E54;
+  }
+
+  .log-box {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 130px;
+    height: 50px;
+    justify-content: space-evenly;
+  }
+
+  .my-page:hover{
+    background-color: red;
+    transition: 0.7s; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100px;
+  }
+
+  .create-user:hover {
+    background-color: blue;
+    transition: 0.7s; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100px;
+  }
+
+  /* .log-box:hover > .my-page{
+    
+    background-color: red;
+    transition: 0.3s; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 75px;
+  }
+
+  .log-box:hover > .create-user{
+    
+    background-color: blue;
+    transition: 0.3s; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 75px; */
+  
