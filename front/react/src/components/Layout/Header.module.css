@@ -2,6 +2,7 @@
     align-items: center;
     font-size: 40px;
     display: flex;
+    border: 1px solid black;
 }
 
 .search-box {
