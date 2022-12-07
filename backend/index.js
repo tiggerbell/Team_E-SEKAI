@@ -1,4 +1,5 @@
 // 사용할 모듈 
+// https://blogofpjj.tistory.com/47
 // express, nodemon, sequelize, mysql2
 const express = require('express');
 const axios = require("axios");
@@ -11,9 +12,9 @@ const KAKAO_OAUTH_TOKEN_API_URL = "https://kauth.kakao.com/oauth/token"
 const KAKAO_GRANT_TYPE="authorization_code"
 // const KAKAO_CLIENT_id="REST API 부분을 넣어준다."
 const KAKAO_CLIENT_id="6ff5f59d59b0da4aabe80123d2586380";
-const KAKAO_REDIRECT_URL="http://localhost:3000/signup";
+const KAKAO_REDIRECT_URL="http://localhost:8000/auth/kakao/callback";
 
-app.post('/kakao/code', function (req, res) {
+app.get('/auth/kakao/callback', function (req, res) {
         let code = req.query.code;
         console.log(code);
         try{
@@ -24,7 +25,8 @@ app.post('/kakao/code', function (req, res) {
                     'Content-type': 'application/x-www-form-urlencoded;charset=utf-8'
                 }
             }).then((result)=>{
-                console.log(result.data['access_token'])
+                console.log("@#@#@#@"+result.data['access_token']);
+                // console.log("@#@#@#@"+result.data['access_token'])
                 // 토큰을 활용한 로직을 적어주면된다.
     
             }).catch(e=> {
