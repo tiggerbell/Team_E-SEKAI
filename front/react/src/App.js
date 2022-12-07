@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./components/Layout/Header";
-import SideNav from "./components/Layout/SideNav";
-import Slider from "./components/Layout/Slider";
+import Main from "./components/Layout/Main";
+
+
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <SideNav/>
-      <Slider/>
+      <Main/>
     </div>
   );
 }

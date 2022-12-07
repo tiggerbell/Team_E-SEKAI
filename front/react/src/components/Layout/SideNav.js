@@ -5,7 +5,6 @@ import{
     SiBitcoincash,
     SiSimpleanalytics,
     SiRos,
-    VscArrowSmallDown
 }from "react-icons/si";
 
 
@@ -43,20 +42,20 @@ const SideNav = () => {
         <div onClick={toggleHandler}><SiBitcoincash/> Market place</div><br />
         {toggle && 
         <>
-            <div><Span /> Popular collections</div>
-            <div><Span /> Auctions</div> <br />
+            <div><Span /> {">"} Popular collections</div>
+            <div><Span /> {">"} Auctions</div> <br />
         </>}
         <div onClick={toggleHandler1}><SiSimpleanalytics/> Insights</div><br />
         {toggle1 && 
         <>
-            <div><Span /> Stats</div>
-            <div><Span /> My Watchlist</div> <br />
+            <div><Span /> {">"} Stats</div>
+            <div><Span /> {">"} My Watchlist</div> <br />
         </>}
         <div onClick={toggleHandler2}><SiRos/> ES list</div><br />
         {toggle2 && 
         <>
-            <div><Span /> Whitelists </div>
-            <div><Span /> About</div> <br />
+            <div><Span /> {">"} Whitelists </div>
+            <div><Span /> {">"} About</div> <br />
         </>}
         <div><GiConsoleController/> ES game</div>
        
