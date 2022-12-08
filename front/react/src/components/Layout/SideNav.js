@@ -39,25 +39,32 @@ const SideNav = () => {
 
   return (
     <div className={classes['side-nav']}>
-        <div onClick={toggleHandler}><SiBitcoincash/> Market place</div><br />
+        <div 
+          onClick={toggleHandler}
+          className={classes['hover-bg']}><SiBitcoincash/> Market place
+        </div><br />
         {toggle && 
         <>
-            <div><Span /> {">"} Popular collections</div>
-            <div><Span /> {">"} Auctions</div> <br />
+            <div className={classes['hover-tx']}><Span /> {">"} Popular collections</div>
+            <div className={classes['hover-tx']}><Span /> {">"} Auctions</div> <br />
         </>}
-        <div onClick={toggleHandler1}><SiSimpleanalytics/> Insights</div><br />
+        <div 
+          onClick={toggleHandler1}
+          className={classes['hover-bg']}><SiSimpleanalytics/> Insights</div><br />
         {toggle1 && 
         <>
-            <div><Span /> {">"} Stats</div>
-            <div><Span /> {">"} My Watchlist</div> <br />
+            <div className={classes['hover-tx']}><Span /> {">"} Stats</div>
+            <div className={classes['hover-tx']}><Span /> {">"} My Watchlist</div> <br />
         </>}
-        <div onClick={toggleHandler2}><SiRos/> ES list</div><br />
+        <div
+         onClick={toggleHandler2}
+         className={classes['hover-bg']}><SiRos/> ES list</div><br />
         {toggle2 && 
         <>
-            <div><Span /> {">"} Whitelists </div>
-            <div><Span /> {">"} About</div> <br />
+            <div className={classes['hover-tx']}><Span /> {">"} Whitelists </div>
+            <div className={classes['hover-tx']}><Span /> {">"} About</div> <br />
         </>}
-        <div><GiConsoleController/> ES game</div>
+        <div className={classes['hover-bg']}><GiConsoleController/> ES game</div>
        
         
         

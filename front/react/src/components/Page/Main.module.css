@@ -1,0 +1,53 @@
+.inline-block{
+    display: flex;
+}
+
+.scroll-box{
+    padding-left: 360px;
+    padding-top: 50px;
+}
+
+.popular-collect-title-flex{
+    display: flex;
+    align-items: center;
+}
+
+.btn-token{
+    background-color: beige;
+    border: none;
+    border-radius: 40px;
+    width: 100px;
+    height: 50px;
+}
+
+.btn-token-selected{
+    background-color: palevioletred;
+    border: none;
+    border-radius: 40px;
+    width: 100px;
+    height: 50px;
+}
+
+.btn-token:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.select-collect{
+    background-color: beige;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.add-more-collect {
+    right: 100px;
+    position: absolute;
+}
+
+a {
+    text-decoration-line: none;
+    color : black;
+}

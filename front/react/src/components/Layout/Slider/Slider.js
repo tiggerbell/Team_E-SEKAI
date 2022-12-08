@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './slick-theme.css';
 import './slick.css';
 import classes from './Slider.module.css';
-import Button from "../UI/Button";
+import Button from "../../UI/Button";
 
 export default class SimpleSlider extends Component {
   render() {

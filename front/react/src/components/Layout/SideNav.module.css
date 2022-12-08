@@ -1,5 +1,5 @@
 .side-nav{
-    background-color: beige;
+    background-color: rgba(245, 245, 220, 0.4);
     width: 240px;
     height: 100vh;
     font-size: 20px;
@@ -7,4 +7,14 @@
     border: 1px solid black;
     position: absolute;
     left: 0 ;
+}
+
+.hover-bg:hover{
+    background-color: rgba(245, 245, 220, 1);
+    cursor: pointer;
+}
+
+.hover-tx:hover{
+    font-weight: bold;
+    cursor: pointer;
 }
