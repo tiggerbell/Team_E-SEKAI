@@ -2,7 +2,8 @@
     align-items: center;
     font-size: 40px;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    /* background-color: rgba(245, 245, 220, 0.4); */
 }
 
 .search-box {
@@ -10,7 +11,7 @@
     left: 50%;
     margin-top: 60px;
     transform: translate(-50%, -50%);
-    background-color: #949BA0;
+    background-color: beige;
     height: 40px;
     padding: 10px;
     border-radius: 40px; 

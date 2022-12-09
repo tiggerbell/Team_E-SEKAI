@@ -1,12 +1,15 @@
 .side-nav{
     background-color: rgba(245, 245, 220, 0.4);
     width: 240px;
-    height: 100vh;
+    height: 200vh;
     font-size: 20px;
     padding: 20px 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     left: 0 ;
+    /* padding-top: 122px;
+    margin-top: -122px; */
+    
 }
 
 .hover-bg:hover{
