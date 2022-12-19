@@ -6,6 +6,7 @@ import { FaEthereum } from "react-icons/fa" ;
 import { SiDogecoin } from "react-icons/si";
 import { Link } from 'react-router-dom';
 import topNft1 from '../../assets/c_millenia_pfp_1668187735016.webp'
+import popCollect1 from '../../assets/fCgR75fYed__y5HRYdFV5R0NTNorqquwS_MkpnuvFNA.png'
 import Footer from '../Layout/Footer';
 
 const Main = (props) => {
@@ -82,18 +83,261 @@ const Main = (props) => {
 
           <div className={classes['popular-collect-container']}>
             {/* 여기는 인기 collect 컴포넌트가 들어가야함 */}
-            <Link to = "/">1</Link>
-            <Link to = "/">2</Link>
-            <Link to = "/">3</Link>
-            <Link to = "/">4</Link>
-            <Link to = "/">5</Link>
-            <Link to = "/">6</Link>
-            <Link to = "/">7</Link>
-            <Link to = "/">8</Link>
-            <Link to = "/">9</Link>
-            <Link to = "/">10</Link>
-            <Link to = "/">11</Link>
-            <Link to = "/">12</Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>1</div>
+              <img src={popCollect1} alt="pop1" />  
+              <div className={classes['block']}>
+                <div className={classes['flex']}>
+                  <h3>DUELBOTS</h3>
+                  <span>125.82{"%"}</span>
+                </div> 
+                <div className={classes['flex']}>
+                  <div className={classes['margin200']}>
+                    <span>Floor</span>
+                    <FaEthereum/>
+                    <span>13.9</span>
+                  </div>
+                  <div>
+                    <FaEthereum/>
+                    <span>4,127.94</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>5</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>9</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+      
+            <Link to = "/">
+              <div className={classes['pop-rank']}>2</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>6</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>10</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+
+            <Link to = "/">
+              <div className={classes['pop-rank']}>3</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>7</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>11</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+
+            <Link to = "/">
+              <div className={classes['pop-rank']}>4</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>8</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
+            <Link to = "/">
+              <div className={classes['pop-rank']}>12</div>
+                <img src={popCollect1} alt="pop1" />  
+                <div className={classes['block']}>
+                  <div className={classes['flex']}>
+                    <h3>DUELBOTS</h3>
+                    <span>125.82{"%"}</span>
+                  </div> 
+                  <div className={classes['flex']}>
+                    <div className={classes['margin200']}>
+                      <span>Floor</span>
+                      <FaEthereum/>
+                      <span>13.9</span>
+                    </div>
+                    <div>
+                      <FaEthereum/>
+                      <span>4,127.94</span>
+                    </div>
+                  </div>
+                </div>
+            </Link>
           </div>
 
           <div className={classes['top-upvote-title-flex']}>

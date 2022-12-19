@@ -65,10 +65,26 @@ a {
     /* 간격 패딩 */
     row-gap: 10px;
     column-gap: 10px;
-    
 }
+
+.pop-rank{
+    padding-top: 30px;
+    margin-left: 10px;
+}
+
+.block{
+    display: block;
+}
+
+.popular-collect-container > a > img{
+    border-radius: 3rem;
+    margin: 5px;
+    /* padding: 10px; */
+}
+
 .popular-collect-container > a {
     background-color: beige;
+    display: flex;
 }
 
 .top-upvote-title-flex{
@@ -101,4 +117,20 @@ a {
 
 .like-color-red{
     color: red;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex > h3{
+    margin-right: 200px;
+}
+
+.flex > span{
+    padding-top: 21px;
+}
+
+.margin200{
+    margin-right: 200px;
 }

@@ -56,9 +56,38 @@
     right: 30px;
     border: 1px solid black;
     border-radius: 15px;
-    width: 130px;
+    width: 230px;
     height: 50px;
-    justify-content: space-evenly;
+  }
+
+  .create-user{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 200px;
+    padding-left: 25px;
+  }
+
+  .account-box{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 200px;
+    padding-left: 25px;
+    /* 숨긴 부분 처리 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .account-box:hover{
+    background-color: blue;
+    transition: 0.7s; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 200px;
+  }
+
+  .my-page{
+     width: 50px;
   }
 
   .my-page:hover{
@@ -66,7 +95,7 @@
     transition: 0.7s; 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 100px;
+    width: 50px;
   }
 
   .create-user:hover {
@@ -74,7 +103,7 @@
     transition: 0.7s; 
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 100px;
+    width: 200px;
   }
 
   /* .log-box:hover > .my-page{
