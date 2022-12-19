@@ -11,7 +11,7 @@ const SignUp = () => {
     const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 
   return (
-    <div>
+    <div> 
         <div className={classes["kakao-box"]}>
             <a href={KAKAO_AUTH_URL}>
                 <div className={classes["kakao-btn"]}>
