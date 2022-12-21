@@ -4,26 +4,50 @@ import classes from './Header.module.css'
 import { CgUserAdd, CgSearch, CgUser } from "react-icons/cg";
 import useWeb3 from '../../hooks/useWeb3'
 import {FaRegBell} from "react-icons/fa"
+import { useWeb3React } from '@web3-react/core';
+import { injected } from '../../lib/connector';
 
 const Header = () => {
-  const [web3, account] = useWeb3();
+ // const [web3, account] = useWeb3();
   const [connectWalltet, setConnectWallet] = useState(null);
 
-  console.log(account)
+  //console.log(account)
 
-  useEffect(()=>{
-     // 화살표 async 즉시 실행 함수
-     (async ()=>{
-      if(!window.ethereum) return;
-      // 메타마스크에 연결되어있는 계정을 가져오고
-      const [address] = await window.ethereum.request({
-          method : "eth_requestAccounts",
-      })
-      // 계정 값으로 state 값 변경.
-      setConnectWallet(address)
+  const {
+    chainedId,
+    account,
+    active,
+    activate,
+    deactivate
+  } = useWeb3React();
+
+  const walletConnectHandler = () => {
+    if(active) {
+      deactivate();
+      return;
+    }
+    
+    activate(injected, (error) => {
+      if('/No Ethereum provider was found on window.ethereum/'.test(error)) {
+        window.open('https://metamask.io/download.html');
+      }
+    });
+  }
+
+
+  // useEffect(()=>{
+  //    // 화살표 async 즉시 실행 함수
+  //    (async ()=>{
+  //     if(!window.ethereum) return;
+  //     // 메타마스크에 연결되어있는 계정을 가져오고
+  //     const [address] = await window.ethereum.request({
+  //         method : "eth_requestAccounts",
+  //     })
+  //     // 계정 값으로 state 값 변경.
+  //     setConnectWallet(address)
       
-  })()
-  },[])
+  // })()
+  // },[])
 
 
   return (
@@ -60,6 +84,7 @@ const Header = () => {
               <>
                 <div className={classes['my-page']}><CgUser/></div>
                 <div className={classes['create-user']}>Connect Wallet</div>
+                <button className={classes['create-user']} type="button" onClick={walletConnectHandler}>{ active ? 'disconnect':'connect'}</button>
                 {/* <div className={classes['create-user']}><CgUserAdd/></div> */}
               </>
             }
