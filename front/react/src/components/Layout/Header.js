@@ -9,8 +9,6 @@ const Header = () => {
   const [web3, account] = useWeb3();
   const [connectWalltet, setConnectWallet] = useState(null);
 
-  console.log(account)
-
   useEffect(()=>{
      // 화살표 async 즉시 실행 함수
      (async ()=>{
