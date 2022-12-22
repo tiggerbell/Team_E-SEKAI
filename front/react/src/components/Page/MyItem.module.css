@@ -1,0 +1,45 @@
+.padding-left360{
+    padding-left: 360px;
+    padding-top: 50px;
+}
+
+.state-borad {
+    width: 300px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(2,25px);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.flex-list{
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.account-button{
+    width: 93px;
+    height: 22.33px;
+    /* 숨긴 부분 처리 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.flex-list-item{
+    display: flex;
+}
+
+.flex-list-item > div{
+    background-color: beige;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+

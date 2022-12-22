@@ -39,7 +39,7 @@ contract EthSwap{
         // 외부입력값으로 사용하기 보다는 컨트랙트 내부에서 코드 문제를 확인하기 위해 사용한다.
         // 조건의 부합하지 않으면 에러를 발생시키고 gas값을 환불 시켜줌
         require(token.balanceOf(address(this)) >= tokenAmount, "err");
-        token.transfer(msg.sender, tokenAmount);
+        token.transfer(getToken(), tokenAmount);
     }
     // function buyToken(address user, uint value) public payable{
     //     uint256 tokenAmount = value * rate;
