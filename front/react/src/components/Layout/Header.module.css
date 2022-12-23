@@ -35,7 +35,7 @@
     background: none;
     border: none;
     outline: none;
-    color: white;
+    color: black;
     font-size: 15px;
     line-height: 40px;
     width: 0; 
@@ -67,6 +67,14 @@
     padding-left: 25px;
   }
 
+  .create-user-button{
+    all:unset;
+    font-size: 20px;
+    
+    width: 200px;
+    padding-left: 25px;
+  }
+
   .account-box{
     font-size: 20px;
     padding-top: 10px;
@@ -76,18 +84,25 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
   }
 
-  .account-box:hover{
+  .notion{
+    width: 50px;
+    border-right: black solid 1px;
+    cursor: pointer;
+  }
+  /* .account-box:hover{
     background-color: blue;
     transition: 0.7s; 
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 200px;
-  }
+  } */
 
   .my-page{
      width: 50px;
+     border-right: black solid 1px;
   }
 
   .my-page:hover{
@@ -105,6 +120,44 @@
     border-bottom-right-radius: 15px;
     width: 200px;
   }
+
+  .create-user-button:hover {
+    background-color: blue;
+    transition: 0.7s; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 200px;
+  }
+  
+  .wallet-toggle{
+    position: absolute;
+    width: 229px;
+    height: 200px;
+    background-color: aquamarine;
+    z-index: 999;
+  }
+
+
+  .wallet-toggle > div > a{
+    font-size: x-large;
+  }
+ 
+
+  .wallet-toggle > div > button {
+    /* 태그 기본 설정 리셋 */
+    all : unset;
+    font-size: x-large;
+    /* position: absolute;
+    right: 0; */
+  }
+
+  .wallet-toggle > div > .close{
+    position: absolute;
+    right: 5px;
+    padding-right: 5px;
+    top: 5px;
+  }
+ 
 
   /* .log-box:hover > .my-page{
     

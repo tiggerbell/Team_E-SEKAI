@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import classes from './SideNav.module.css';
-import { GiConsoleController } from "react-icons/gi" ;   
+import { GiConsoleController, GiSwapBag } from "react-icons/gi" ;   
 import{
     SiBitcoincash,
     SiSimpleanalytics,
     SiRos,
 }from "react-icons/si";
+import { Link } from 'react-router-dom';
 
 
 
@@ -64,7 +65,11 @@ const SideNav = () => {
             <div className={classes['hover-tx']}><Span /> {">"} Whitelists </div>
             <div className={classes['hover-tx']}><Span /> {">"} About</div> <br />
         </>}
-        <div className={classes['hover-bg']}><GiConsoleController/> ES game</div>
+        <div className={classes['hover-bg']}><GiConsoleController/> ES game</div><br />
+        <Link to ='/swap'>
+          <div className={classes['hover-bg']}><GiSwapBag/> Swap</div>
+        </Link>
+
        
         
         

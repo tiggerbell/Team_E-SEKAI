@@ -1,0 +1,114 @@
+.padding-left360{
+    padding-left: 360px;
+    padding-top: 50px;
+}
+
+.p1{
+    border: black solid 1px;
+    width: 1450px;
+    height: 1000px;
+    display: flex;
+}
+
+.p1-left{
+    border: blue solid 1px;
+    width: 600px;
+    height: 1000px;
+    border-radius: 15px;
+}
+
+.p1-right{
+    border: red solid 1px;
+    width: 850px;
+    height: 1000px;
+    border-radius: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+    align-items: center;
+}
+
+.favority{
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.favority-amount{
+    margin-right: 8px;
+}
+
+.frame-img{
+    width: 480px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+.text-center{
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.align-center{
+    align-items: center;
+    display: flex;
+    padding-left: 30px;
+    font-size: x-large;
+}
+
+.border-1{
+    border-bottom: blue solid 1px;
+}
+
+.padding-left{
+    padding-left: 10px;
+}
+
+.decription-content{
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+p{
+    margin: 0;
+}
+
+hr{
+    margin: 0;
+    border: blue solid 0.5px;
+}
+
+.section-box{
+    margin-left: 20px;
+    /* background: green; */
+    width: 810px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.margin-left13{
+    margin-left: 13px;
+}
+
+.button-list > button{
+    background-color: white;
+    margin-right: 3px;
+}
+
+.section-flex{
+    display: flex;
+    margin-left: 13px;
+    
+}
+
+.margin-right10{
+    margin-right: 10px;
+    align-items: center;
+}

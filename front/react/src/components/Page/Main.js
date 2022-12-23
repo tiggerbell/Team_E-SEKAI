@@ -348,6 +348,7 @@ const Main = (props) => {
           </div>
 
           <div className={classes['top-img-flex']}>
+            <Link to ='/product1'>
             <div className={classes['top-nft-wrap']}>
               <img 
                 src={topNft1} alt="topNft1"
@@ -360,6 +361,7 @@ const Main = (props) => {
                 <div>Dec 15, 09:00</div>
               </div>
             </div>
+            </Link>
 
             <div className={classes['top-nft-wrap']}>
               <img 
