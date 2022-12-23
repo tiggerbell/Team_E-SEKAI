@@ -92,6 +92,14 @@
     border-right: black solid 1px;
     cursor: pointer;
   }
+
+  .notion:hover{
+    background-color: red;
+    transition: 0.7s; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+  }
   /* .account-box:hover{
     background-color: blue;
     transition: 0.7s; 
@@ -130,6 +138,7 @@
   }
   
   .wallet-toggle{
+    margin-top: 35px;
     position: absolute;
     width: 229px;
     height: 200px;

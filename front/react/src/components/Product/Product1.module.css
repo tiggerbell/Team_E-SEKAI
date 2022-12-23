@@ -4,7 +4,7 @@
 }
 
 .p1{
-    border: black solid 1px;
+    /* border: black solid 1px; */
     width: 1450px;
     height: 1000px;
     display: flex;
@@ -15,6 +15,7 @@
     width: 600px;
     height: 1000px;
     border-radius: 15px;
+    margin-right: 15px;
 }
 
 .p1-right{
@@ -111,4 +112,12 @@ hr{
 .margin-right10{
     margin-right: 10px;
     align-items: center;
+}
+
+.button-style1{
+    background-color: beige;
+    border: green solid 1px;
+    border-radius: 0.75rem;
+    margin-right: 3px;
+    cursor: pointer;
 }

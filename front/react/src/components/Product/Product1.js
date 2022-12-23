@@ -61,9 +61,15 @@ const Product1 = () => {
                         <div className={classes['section-box']}>
                             <div>김작가</div>
                             <div className={classes['button-list']}>
-                                <button><BsFillShareFill/></button>
-                                <button><SlSizeFullscreen/></button>
-                                <button><FiMoreHorizontal/></button>
+                                <button >
+                                    <BsFillShareFill/>
+                                </button>
+                                <button>
+                                    <SlSizeFullscreen/>
+                                </button>
+                                <button>
+                                    <FiMoreHorizontal/>
+                                </button>
                             </div>
                         </div>
                         <h1 className={classes['margin-left13']}>정신나갈것 같은 안드로이드</h1> <br />
@@ -81,8 +87,12 @@ const Product1 = () => {
                         <div>Current price</div>
                         <div>0.13 ETH $157.72</div>
                         <div>
-                            <button>purchase</button>
-                            <button>Add to cart</button>
+                            <button 
+                                className={classes['button-style1']}>purchase
+                            </button>
+                            <button
+                                className={classes['button-style1']}>Add to cart
+                            </button>
                         </div>
                     </div>
                 </div>
