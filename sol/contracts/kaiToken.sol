@@ -38,19 +38,18 @@ contract KaiToken is ERC20, Ownable {
 
         require(balanceOf(owner()) >= amount, "owner KaiToken is no amount"); 
 
-        tokentransfer(owner(),msg.sender, amount);
+        tokenTransferBuy(owner(),msg.sender, amount);
 
         if(msg.sender == owner()){
             _mint(owner(),amount);
         }
     }
 
-        // 토큰 판매 함수
-    function sellToken(uint256 _amount) public payable{
-        require(balanceOf(msg.sender) >= _amount);
+   function sellToken(uint256 _amount) public payable{
+        require(balanceOf(msg.sender) >= _amount, "you fucking no Token ok?");
         uint256 etherAmount = _amount/rate;
-        require(address(this).balance >= etherAmount);
-        transferFrom(msg.sender, address(this), _amount);
+        require(address(this).balance >= etherAmount, "CA no ether");
+        tokenTransferSell(owner(),msg.sender, _amount);
         payable(msg.sender).transfer(etherAmount);
     }
 }

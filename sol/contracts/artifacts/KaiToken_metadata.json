@@ -354,7 +354,30 @@
 						"type": "uint256"
 					}
 				],
-				"name": "tokentransfer",
+				"name": "tokenTransferBuy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenTransferSell",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -514,11 +537,11 @@
 	},
 	"sources": {
 		"contracts/kaiToken.sol": {
-			"keccak256": "0xd99a96d9cac22a916efec290309127266cc8209dc4f95000cf5a6b15a5fd33e1",
+			"keccak256": "0x6d725fb6205736fb168b77b8b9019ff54aea2fee77fabc70ca99b5137d301f3f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e87684eaf36c5216feb6908d802deb26789f13692689df02de61370cb2c0af72",
-				"dweb:/ipfs/QmcXSP2EUEkjE4DaRVE9crFkxmgYsyRs5fCZzZTxF6tzfG"
+				"bzz-raw://4056497807c742b34b3948d3e4ac871365ad21b0daba7faeab5c5a92975ef231",
+				"dweb:/ipfs/QmfYYjyoFQSJhCcd53zEtpT4ro3U8JYQUYEogNwadoU8cA"
 			]
 		},
 		"node_modules/openzeppelin-solidity/contracts/access/Ownable.sol": {
@@ -530,11 +553,11 @@
 			]
 		},
 		"node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol": {
-			"keccak256": "0xd1e36286427d3208ab6e433baccd041110c6421eccbf590eac1bc22110de6440",
+			"keccak256": "0x18c408ff55f398bf5428e46510285a536dc3c61209b450862c339d504f7a266e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://469fa5f6b6fe950b860e904a25a0809267db0232fe60a1fe8ebc90824bb877f9",
-				"dweb:/ipfs/QmWiHNnHRTcq8X2375QcEkGT5GNQjEQYEedHQpKho9e7Xu"
+				"bzz-raw://9ff645c4f006762392f186b329fa1ee6f968d99c34caf9d82c0c5af1ca54ec78",
+				"dweb:/ipfs/Qmc5UC9JMhJW7tYACBNzYkAAXfgDUjjeRC3gw3v3F6Y9Ei"
 			]
 		},
 		"node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
