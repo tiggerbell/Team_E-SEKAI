@@ -133,7 +133,9 @@
     position: absolute;
     width: 229px;
     height: 200px;
-    background-color: aquamarine;
+    background-color: beige;
+    border: green solid 1px;
+    border-radius: 0.75rem;
     z-index: 999;
   }
 

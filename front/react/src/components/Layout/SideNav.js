@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import classes from './SideNav.module.css';
-import { GiConsoleController, GiSwapBag } from "react-icons/gi" ;   
+import { GiConsoleController, GiSwapBag, GiLandMine } from "react-icons/gi" ;   
 import{
     SiBitcoincash,
     SiSimpleanalytics,
@@ -68,6 +68,9 @@ const SideNav = () => {
         <div className={classes['hover-bg']}><GiConsoleController/> ES game</div><br />
         <Link to ='/swap'>
           <div className={classes['hover-bg']}><GiSwapBag/> Swap</div>
+        </Link> <br />
+        <Link to ='/minting'>
+          <div className={classes['hover-bg']}><GiLandMine/> Minting</div>
         </Link>
 
        

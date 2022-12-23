@@ -5,14 +5,26 @@ import { FaEthereum } from "react-icons/fa" ;
 import {SiKaios} from 'react-icons/si';
 import {BsFillArrowDownCircleFill} from 'react-icons/bs';
 
-const Swap = () => {
+const Swap = ({isSwap,setIsSwap}) => {
   const [changeKai, setChageKai] = useState(null);
+  const [changeEth, setChageEth] = useState(null);
   const [inputNum, setInputNum] = useState(false);
+   
+  const swapTokenHandler = () => {
+    setIsSwap(isSwap=> !isSwap)
+    console.log(isSwap);
+  }
 
-
-  
   const onChageKai = (event) =>{
     setChageKai(event.target.value * 100);
+    setInputNum(true);
+    if(inputNum == null){
+        setInputNum(false);
+    }
+  }
+
+  const onChangeEth = (event) =>{
+    setChageEth(event.target.value / 100);
     setInputNum(true);
     if(inputNum == null){
         setInputNum(false);
@@ -34,34 +46,76 @@ const Swap = () => {
             </div>
 
             <hr className={classes['hr-nomal']}/> <br />
-
-            <div className={classes['token-name']}><FaEthereum/>ETH</div>
-            <label htmlFor="">
-                <div>
-                    <input 
+            {
+                isSwap == true
+                ?
+                <>
+                 <div className={classes['token-name']}><SiKaios/>KAI</div>
+                  <label htmlFor="">
+                      <input 
                         className={classes['input-token']}
-                        type="number"
-                        onChange={onChageKai}
+                        type="number" 
+                        defaultValue={changeKai || ''}
                         placeholder="0.0"
-                        />
-                </div>
-                <div>
-                    {/* 나중에 이더변환 가격 넣을 div */}
-                </div>
-            </label>
+                        onChange={onChangeEth}/>
+                    </label>
+                </>
+                :
+                <>
+                    <div className={classes['token-name']}><FaEthereum/>ETH</div>
+                       <label htmlFor="">
+                         <div>
+                           <input 
+                            className={classes['input-token']}
+                            type="number"
+                            onChange={onChageKai}
+                            defaultValue={changeEth || ''}
+                            placeholder="0.0"/>
+                          </div>
+                        </label>
+                </>
+            }
+         
+            <div 
+                className={classes['text-align-center']}
+                // onClick={''}
+            >
+                <button 
+                    className={classes['switch-token-btn']}
+                    onClick={swapTokenHandler}>
+                    <BsFillArrowDownCircleFill className={classes['BsFillArrowDownCircleFill']}/>
+                </button>
+            </div>
             
-            <div className={classes['text-align-center']}><BsFillArrowDownCircleFill/></div>
-            
-            <div className={classes['token-name']}><SiKaios/>KAI</div>
-
-            <label htmlFor="">
-                <input 
-                    className={classes['input-token']}
-                    type="number" 
-                    defaultValue={changeKai || ''}
-                    placeholder="0.0"
-                    />
-            </label>
+            {
+                isSwap == false
+                ?
+                <>
+                 <div className={classes['token-name']}><SiKaios/>KAI</div>
+                  <label htmlFor="">
+                      <input 
+                        className={classes['input-token']}
+                        type="number" 
+                        defaultValue={changeKai || ''}
+                        placeholder="0.0"
+                        onChange={onChangeEth}/>
+                    </label>
+                </>
+                :
+                <>
+                    <div className={classes['token-name']}><FaEthereum/>ETH</div>
+                        <label htmlFor="">
+                            <div>
+                            <input 
+                            className={classes['input-token']}
+                            type="number"
+                            onChange={onChageKai}
+                            defaultValue={changeEth || ''}
+                            placeholder="0.0"/>
+                            </div>
+                        </label>
+                </>
+            }
 
             <div className={classes['slippage-tolerance-box']}>
                 <div className={classes['margin-right']}>Slippage Tolerance</div>

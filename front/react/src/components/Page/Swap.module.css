@@ -25,6 +25,10 @@
     border: none;
 }
 
+.input-token::placeholder{
+    color: white;
+}
+
 .text-align-center{
     text-align: center;
     font-size: 40px;
@@ -64,3 +68,17 @@
 .hr-nomal{
     border: black solid 0.5px;
 }
+
+.switch-token-btn{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 1.75rem;
+    cursor: pointer;
+}
+
+.BsFillArrowDownCircleFill{
+    width: 30px;
+    height: 30px;
+}
+

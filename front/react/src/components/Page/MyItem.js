@@ -24,12 +24,6 @@ const MyItem = (props) => {
         // alert('복사에 실패하였습니다');
       }
      };
-
-
-      
-
-    
-     
       
       return (
         <div>
@@ -41,7 +35,10 @@ const MyItem = (props) => {
                 isAccount == true
                 ?
                 <>
-                  <button><FaEthereum/>Copied!</button>
+                  <button
+                    className={classes['button-style1']}>
+                    <FaEthereum/>Copied!
+                  </button>
                 </>
                 :
                 <>
@@ -52,8 +49,12 @@ const MyItem = (props) => {
                 </>
               }
        
-              <button><CgUser/>Edit Profile</button>
-              <button><FaDiscord/>Link Discord</button>
+              <button className={classes['button-style1']}>
+                <CgUser/>Edit Profile
+              </button>
+              <button className={classes['button-style1']}>
+                <FaDiscord/>Link Discord
+              </button>
             </div> <br></br>
 
               {/* 보유 아이템 상태 영역 */}
