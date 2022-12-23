@@ -1,0 +1,29 @@
+.footer-flex{
+    display: flex;
+    padding-top: 100px;
+}
+
+.eslogo-box{
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+}
+
+/* .footer-box1{
+    
+} */
+
+.footer-box1-under{
+ padding-top: 250px;   
+ padding-left: 50px;
+ margin-right: 300px;
+}
+
+.footer-ranges{
+    margin-right: 128px;
+}
+
+.footer-ranges > ul{
+    list-style: none;
+    padding-left: 0px;
+}

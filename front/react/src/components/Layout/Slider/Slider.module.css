@@ -1,0 +1,51 @@
+.slider-box{
+   width: 1400px;
+   height: 640px;
+   padding-top: 50px;
+   padding-left: 400px; 
+}
+
+.slider-range{
+    
+    width: 1400px;
+    height: 640px;
+}
+
+.flex{
+    display: flex;
+}
+
+.slider1-img{
+    width: 820px;
+    height: 639px;
+    background-image: url(https://bafybeiet7aucnhledg6zm7f3dgugan6vi3duvepvts7rlkozxpghdd443i.ipfs.nftstorage.link/);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slider2-img{
+    width: 820px;
+    height: 639px;
+    background-image: url(https://bafybeicdg6evs6vizo2o5evqh2lrdia3gi4dq6r3hssp5fj4qkfqr5omda.ipfs.nftstorage.link/);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slider1-content{
+    margin-top: 0.75rem;
+    width: 500px;
+    padding: 20px 40px 20px 40px;
+}
+
+.slider1-content > h2{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+
+
+.slider-p1{
+
+}
