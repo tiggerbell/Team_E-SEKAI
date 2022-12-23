@@ -58,7 +58,7 @@ function App() {
   const buy = () => {
     // const accounts = await web3.eth.getAccounts();
     // console.log(accounts[0])
-    deployed.methods.buyToken().send({from : accounts, value: web3.utils.toWei("1", "ether")});
+    deployed.methods.buyToken().send({from : accounts, to : CA});
   }
 
   useEffect(() => {
