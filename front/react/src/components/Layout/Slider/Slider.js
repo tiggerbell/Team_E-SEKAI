@@ -27,11 +27,28 @@ export default class SimpleSlider extends Component {
       <div className={classes['slider-box']}>
         <Slider {...settings}>
           <div className={classes['slider-range']}>
-            <h3>1번째 slide</h3>
-            <Button>click</Button>
+            <div className={classes['flex']}>
+              <div className={classes['slider1-content']}>
+                <h2>1 Day Of Gifting Left!</h2>
+                <p className={classes['slider-p1']}>ME Rewards hub is giving out gifts every day this week. Sign in and connect your wallets to level up and see what you’ve won! The higher your level, the better your rewards. </p><br /><br />
+                <Button>click</Button>
+              </div>
+              <div className={classes['slider1-img']}>
+              </div>
+            </div>
           </div>
+
           <div className={classes['slider-range']}>
-            <h3>2번째 slide</h3>
+            <div className={classes['flex']}>
+              <div className={classes['slider1-content']}>
+                <h2>E-SEKAI Football Collection: 2022 Champions</h2>
+                <p className={classes['slider-p1']}>This limited edition collectible is part of the Polygon Football Collection and celebrates Argentina as 2022 World Champions! </p><br /><br />
+                <Button>click</Button>
+              </div>
+              <div className={classes['slider2-img']}>
+              </div>
+            </div>
+            
           </div>
           <div className={classes['slider-range']}>
             <h3>3번째 slide</h3>

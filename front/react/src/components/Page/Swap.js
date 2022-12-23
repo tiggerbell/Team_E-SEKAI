@@ -5,13 +5,14 @@ import { FaEthereum } from "react-icons/fa" ;
 import {SiKaios} from 'react-icons/si';
 import {BsFillArrowDownCircleFill} from 'react-icons/bs';
 
-const Swap = ({buy}) => {
+const Swap = ({buy, setEthInputValue, kaiBalance, ethBalance}) => {
   const [changeKai, setChageKai] = useState(null);
   const [inputNum, setInputNum] = useState(false);
 
 
   
   const onChageKai = (event) =>{
+    setEthInputValue(event.target.value);
     setChageKai(event.target.value * 100);
     setInputNum(true);
     if(inputNum == null){
@@ -33,9 +34,9 @@ const Swap = ({buy}) => {
                 <div></div>
             </div>
 
-            <hr/>
+            <hr className={classes['hr-nomal']}/> <br />
 
-            <div className={classes['token-name']}><FaEthereum/>ETH</div>
+            <div className={classes['token-name']}><FaEthereum/>ETH</div> <div>{ethBalance}</div>
             <label htmlFor="">
                 <div>
                     <input 
@@ -52,7 +53,7 @@ const Swap = ({buy}) => {
             
             <div className={classes['text-align-center']}><BsFillArrowDownCircleFill/></div>
             
-            <div className={classes['token-name']}><SiKaios/>KAI</div>
+            <div className={classes['token-name']}><SiKaios/>KAI</div> <div>{kaiBalance}</div>
 
             <label htmlFor="">
                 <input 
@@ -73,7 +74,7 @@ const Swap = ({buy}) => {
                 inputNum == true
                 ?
                 <>
-                    <button onClick={buy} 
+                    <button onClick={buy}
                         className={classes['swap-token-button']}
                     >Swap</button>
                 </>

@@ -46,6 +46,7 @@
     width: 345px;
     margin-left: 13px;
     height: 48px;
+    cursor: pointer;
 }
 
 .slippage-tolerance-box{
@@ -61,3 +62,6 @@
     margin-right: 175px;
 }
 
+.hr-nomal{
+    border: black solid 0.5px;
+}
