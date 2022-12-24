@@ -25,7 +25,7 @@ const Header = () => {
   }
 
   if (typeof window.ethereum !== 'undefined') {
-    // console.log('MetaMask is installed!');
+     console.log('MetaMask is installed!');
   }
 
   
@@ -120,8 +120,7 @@ const Header = () => {
                 <div className={classes['my-page']}><CgUser/></div>
                 <button
                   className={classes['create-user-button']}
-                  onClick={onClickActivateHandler}
-                >
+                  onClick={onClickActivateHandler}>
                   Connect Wallet</button>
               </>
             }

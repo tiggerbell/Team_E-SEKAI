@@ -6,6 +6,7 @@ import Main from "./components/Page/Main";
 import MyItem from "./components/Page/MyItem";
 import Swap from "./components/Page/Swap";
 import Product1 from "./components/Product/Product1";
+import Minting from "./components/Page/Minting";
 // 지갑연결임포트
 import { useWeb3React } from '@web3-react/core';
 import useWeb3 from './hooks/useWeb3';
@@ -96,8 +97,8 @@ function App() {
           path="/product1"
           element={<Product1 />}/>
         <Route 
-          path="/product1"
-          element={<Product1 />}/>
+          path="/minting"
+          element={<Minting />}/>
 
       </Routes>
       

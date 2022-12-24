@@ -26,7 +26,7 @@ const useWeb3 = () => {
   
           setAccount(account);
           setWeb3(web3);
-      })()
+      })
   
   },[])
   
