@@ -71,7 +71,7 @@ function App() {
     // const accounts = await web3.eth.getAccounts();
     // console.log(accounts[0])
     await web3.eth.sendTransaction({from : accounts, to : CA, value : web3.utils.toWei(ethInputValue, "ether")})
-    // setKaiBalance(kaiBalance - web3.utils.toWei(kaiInputValue, "ether"));
+    // setKaiBalance(kaiBalance - web3.utils.toWei(kaiInputValue, "ether"));  
   }
 
 

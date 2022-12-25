@@ -14,6 +14,7 @@
 // npm i express mysql2 sequelize,  nodemon
 // ============================================================
 
+// remixd -s . --remix-ide https://remix.ethereum.org
 
 // Available Accounts
 // ==================

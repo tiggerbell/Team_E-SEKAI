@@ -1,4 +1,6 @@
 const KaiToken = artifacts.require("KaiToken");
+const MintNFT = artifacts.require("MintNFT");
+const Sale = artifacts.require("Sale");
 
 module.exports = async function (deployer){
     // KaiToken 배포 진행
