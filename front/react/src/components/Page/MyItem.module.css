@@ -61,6 +61,8 @@
 .item-list{
     padding-top: 50px;
     display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
 }
 
 .sale-box{

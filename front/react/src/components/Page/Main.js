@@ -3,7 +3,7 @@ import SideNav from '../Layout/SideNav'
 import Slider from '../Layout/Slider/Slider'
 import classes from './Main.module.css'
 import { FaEthereum } from "react-icons/fa" ;   
-import { SiDogecoin } from "react-icons/si";
+import { SiKaios } from "react-icons/si";
 import { Link } from 'react-router-dom';
 import topNft1 from '../../assets/c_millenia_pfp_1668187735016.webp'
 import popCollect1 from '../../assets/fCgR75fYed__y5HRYdFV5R0NTNorqquwS_MkpnuvFNA.png'
@@ -66,13 +66,13 @@ const Main = (props) => {
               <>
                 <button 
                 className={classes['btn-token-selected']}
-                onClick={dogeHandler}><div><span><SiDogecoin/> Doge</span></div></button> 
+                onClick={dogeHandler}><div><span><SiKaios/> Kai</span></div></button> 
               </>
               :
               <>
                 <button 
                 className={classes['btn-token']}
-                onClick={dogeHandler}><div><span><SiDogecoin/> Doge</span></div></button>
+                onClick={dogeHandler}><div><span><SiKaios/> Kai</span></div></button>
               </>
             }
 

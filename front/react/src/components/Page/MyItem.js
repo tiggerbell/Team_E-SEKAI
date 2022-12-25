@@ -14,7 +14,7 @@ const MyItem = (props) => {
     const [saleNft, setSaleNft] = useState(0)
 
     const saleNftHandler = (event) => {
-      setSaleNft(event.target.value);
+      setSaleNft(event.target.value - (event.target.value * 0.0333));
     }
 
     
@@ -97,6 +97,7 @@ const MyItem = (props) => {
             <div className={classes['item-list']}>
               <div>내가 가지고 있는 NFT1 </div>
               <div>내가 가지고 있는 NFT2 </div>
+              <div>내가 가지고 있는 NFT3</div>
                 <div className={classes['sale-box-range']}>
                   <div className={classes['sale-box']}>
                     <div>Item Price</div>
