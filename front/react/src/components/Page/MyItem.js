@@ -3,15 +3,20 @@ import SideNav from '../Layout/SideNav';
 import classes from './MyItem.module.css';
 import {FaDiscord, FaEthereum} from 'react-icons/fa'
 import { CgUserAdd, CgSearch, CgUser } from "react-icons/cg";
-
+import {AiOutlineSetting} from 'react-icons/ai';
 
 
 
 const MyItem = (props) => {
 
     const [isAccount, setIsAccount] = useState(false);
-
     const [balance, setBalnace] = useState(0)
+    const [saleNft, setSaleNft] = useState(0)
+
+    const saleNftHandler = (event) => {
+      setSaleNft(event.target.value);
+    }
+
     
     const handleCopyClipBoard = async (text) => {
       setIsAccount(true);
@@ -87,6 +92,35 @@ const MyItem = (props) => {
               <div>아이템</div>
               <div>아이템 상장</div>
               <div>활동</div>
+            </div>
+
+            <div className={classes['item-list']}>
+              <div>내가 가지고 있는 NFT1 </div>
+              <div>내가 가지고 있는 NFT2 </div>
+                <div className={classes['sale-box-range']}>
+                  <div className={classes['sale-box']}>
+                    <div>Item Price</div>
+                    <span className={classes['align-center']}>
+                      <FaEthereum/>
+                      <input 
+                        type="number"
+                        onChange={saleNftHandler}/> 
+                      </span>
+                  </div>
+                  <div className={classes['sale-box']}>
+                    <div className={classes['align-center']}>Royalty <AiOutlineSetting/></div>
+                    <span>Full{"(3.33%)"}<FaEthereum/>0</span>
+                  </div>
+                  <div className={classes['sale-box']}>
+                    <div>Total Price</div>
+                    <span>
+                      <FaEthereum/>{saleNft}
+                    </span>
+                  </div>
+                  <button className={classes['button-style1-bigger']}>Sale items</button>
+                </div>
+             
+       
             </div>
 
             

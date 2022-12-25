@@ -27,7 +27,7 @@ const Product1 = () => {
                                 <FaEthereum/>
                             </div>
                             <div className={classes['favority']}>
-                                <div className={classes['favority-amount']}>{"0"}</div>
+                                <div className={classes['favority-amount']}>{"6200"}</div>
                                 <AiOutlineHeart/>
                             </div>
                         </header>
@@ -80,7 +80,7 @@ const Product1 = () => {
                             <BsEye/> <span>344 views</span>
                         </div>
                         <div>
-                            <AiOutlineHeart/> <span>20</span>
+                            <AiOutlineHeart/> <span>6200</span>
                         </div> 
                     </section> <br /><br />
                     <div className={classes['margin-left13']}>

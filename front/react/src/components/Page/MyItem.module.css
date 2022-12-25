@@ -55,4 +55,35 @@
     border: green solid 1px;
     border-radius: 0.75rem;
     margin-right: 3px;
+    cursor: pointer;
+}
+
+.item-list{
+    padding-top: 50px;
+    display: flex;
+}
+
+.sale-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.sale-box-range{
+    width: 500px;
+    height: 200px;
+    background-color: beige;
+}
+
+.button-style1-bigger{
+    background-color: beige;
+    border: green solid 1px;
+    border-radius: 0.75rem;
+    margin-right: 3px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
 }
