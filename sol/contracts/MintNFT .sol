@@ -10,13 +10,13 @@ contract MintNFT is ERC721Enumerable, Ownable {
 
     uint public totalNFT = 30; // nft 총개수
     // uint public mintPrice;
-    string public metadataURI;
+    string public metadataURI = "https://gateway.pinata.cloud/ipfs/Qmeqstq7bL9CJRobvJFGHERHWFNGQkS5TmwZ6NJxwoVr9d/";
     
 
     // 배포할때 받을 인자 설정해주는 부분 init 함수랑 같은 역할
-    constructor(string memory _metadataURI, uint _totalNFT) ERC721("HajinChoi", "Choi") {
-        metadataURI = _metadataURI;
-        totalNFT = _totalNFT;
+    constructor() ERC721("HajinChoi", "Choi") {
+        metadataURI = metadataURI;
+        totalNFT = totalNFT;
         // mintPrice = _mintPrice;
     }
 
