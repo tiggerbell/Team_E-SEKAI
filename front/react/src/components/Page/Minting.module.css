@@ -1,0 +1,24 @@
+.padding-left360{
+    padding-left: 360px;
+    padding-top: 50px;
+}
+
+.button-style1{
+    background-color: beige;
+    border: green solid 1px;
+    border-radius: 0.75rem;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.flex-minting-box{
+    display: flex;
+}
+
+.flex{
+    display: flex;
+}
+
+.margine-rigth10{
+    margin-right: 10px;
+}
