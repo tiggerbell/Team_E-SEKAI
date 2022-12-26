@@ -121,3 +121,7 @@ hr{
     margin-right: 3px;
     cursor: pointer;
 }
+
+.flex-minting-box{
+    display: flex;
+}
