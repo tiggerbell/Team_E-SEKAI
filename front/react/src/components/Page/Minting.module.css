@@ -7,12 +7,15 @@
     background-color: beige;
     border: green solid 1px;
     border-radius: 0.75rem;
-    margin-right: 3px;
+    margin-left: 5px;
     cursor: pointer;
 }
 
 .flex-minting-box{
     display: flex;
+    border-radius: 0.75rem;
+    border: green solid 1px;
+    width: 1000px;
 }
 
 .flex{

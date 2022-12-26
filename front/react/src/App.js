@@ -76,7 +76,7 @@ function App() {
   }
 
   useEffect(() => {
-    console.log(balance);
+    // console.log(balance);
   },[balance])
 
   return (

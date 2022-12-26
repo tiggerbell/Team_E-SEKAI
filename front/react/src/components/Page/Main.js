@@ -365,25 +365,25 @@ const Main = (props) => {
 
             <div className={classes['top-nft-wrap']}>
               <img 
-                src={topNft1} alt="topNft1"
+                src="https://gateway.pinata.cloud/ipfs/QmWZste3qXKL28zieESshXVPc7zFwYxskVL4uVr1kFRT2t/10.png" alt="topNft1"
                 width="218" height="165" />
             </div>
 
             <div className={classes['top-nft-wrap']}>
               <img 
-                src={topNft1} alt="topNft2"
+                src="https://gateway.pinata.cloud/ipfs/QmWZste3qXKL28zieESshXVPc7zFwYxskVL4uVr1kFRT2t/1.png" alt="topNft2"
                 width="218" height="165" />
             </div>
 
             <div className={classes['top-nft-wrap']}>
               <img 
-                src={topNft1} alt="topNft3"
+                src="https://gateway.pinata.cloud/ipfs/QmWZste3qXKL28zieESshXVPc7zFwYxskVL4uVr1kFRT2t/8.png" alt="topNft3"
                 width="218" height="165" />
             </div>
 
             <div className={classes['top-nft-wrap']}>
               <img 
-                src={topNft1} alt="topNft4"
+                src="https://gateway.pinata.cloud/ipfs/QmWZste3qXKL28zieESshXVPc7zFwYxskVL4uVr1kFRT2t/30.png" alt="topNft4"
                 width="218" height="165" />
             </div>
 

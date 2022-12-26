@@ -100,13 +100,6 @@
     border-bottom-left-radius: 15px;
     width: 50px;
   }
-  /* .account-box:hover{
-    background-color: blue;
-    transition: 0.7s; 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 200px;
-  } */
 
   .my-page{
      width: 50px;
@@ -162,28 +155,10 @@
     right: 0; */
   }
 
-  .wallet-toggle > div > .close{
+  .wallet-toggle > div > .closeX{
     position: absolute;
     right: 5px;
     padding-right: 5px;
     top: 5px;
   }
  
-
-  /* .log-box:hover > .my-page{
-    
-    background-color: red;
-    transition: 0.3s; 
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 75px;
-  }
-
-  .log-box:hover > .create-user{
-    
-    background-color: blue;
-    transition: 0.3s; 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 75px; */
-  

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import SideNav from '../Layout/SideNav';
 import classes from './MyItem.module.css';
 import {FaDiscord, FaEthereum} from 'react-icons/fa'
-import { CgUserAdd, CgSearch, CgUser } from "react-icons/cg";
+import { CgUser } from "react-icons/cg";
 import {AiOutlineSetting} from 'react-icons/ai';
 
 
@@ -10,11 +10,13 @@ import {AiOutlineSetting} from 'react-icons/ai';
 const MyItem = (props) => {
 
     const [isAccount, setIsAccount] = useState(false);
-    const [balance, setBalnace] = useState(0)
-    const [saleNft, setSaleNft] = useState(0)
+    const [balance, setBalnace] = useState(0);
+    const [saleNft, setSaleNft] = useState(0);
+    const [royalty, setRoyalty] = useState(0);
 
     const saleNftHandler = (event) => {
-      setSaleNft(event.target.value - (event.target.value * 0.0333));
+      setRoyalty(event.target.value * 0.0333);
+      setSaleNft(event.target.value - royalty);
     }
 
     
@@ -110,7 +112,7 @@ const MyItem = (props) => {
                   </div>
                   <div className={classes['sale-box']}>
                     <div className={classes['align-center']}>Royalty <AiOutlineSetting/></div>
-                    <span>Full{"(3.33%)"}<FaEthereum/>0</span>
+                    <span>Full{"(3.33%)"}<FaEthereum/>{royalty}</span>
                   </div>
                   <div className={classes['sale-box']}>
                     <div>Total Price</div>
