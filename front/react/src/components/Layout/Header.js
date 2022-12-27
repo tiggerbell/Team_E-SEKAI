@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import esLogoImg from '../../assets/esLogo.png'
 import classes from './Header.module.css'
-import { CgUserAdd, CgSearch, CgUser } from "react-icons/cg";
+import { CgSearch, CgUser } from "react-icons/cg";
 import useWeb3 from '../../hooks/useWeb3'
 import {FaRegBell} from "react-icons/fa"
 import {Link} from 'react-router-dom';
@@ -14,7 +14,7 @@ import { injected } from '../../lib/connectors';
 
 
 const Header = () => {
-    const [walletToggle, setWalletToggle] = useState(false);
+  const [walletToggle, setWalletToggle] = useState(false);
 
   const openWalletToggleHandler = () => {
     setWalletToggle(true) 
@@ -24,9 +24,10 @@ const Header = () => {
     setWalletToggle(false)
   }
 
-  if (typeof window.ethereum !== 'undefined') {
-    // console.log('MetaMask is installed!');
-  }
+  // 메타마스크 깔려 있는지 여부 확인 
+  // if (typeof window.ethereum !== 'undefined') {
+  //    console.log('MetaMask is installed!');
+  // }
 
 
   const {
@@ -51,7 +52,6 @@ const Header = () => {
   const onClickDeactivateHandler = () => {
     deactivate(); // connector._events.Web3ReactDeactivate() 이거랑 같은건데
   }
-
 
 
   return (
@@ -120,7 +120,6 @@ const Header = () => {
               </>
             }
         </div>
-
     </div>
   )
 }
