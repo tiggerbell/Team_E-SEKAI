@@ -2,9 +2,9 @@
 .slick-slider
 {
     /* 배경색주기 */
-    background: beige;
+    background: pink;
     position: relative;
-
+    border-radius: 0.75rem;
     display: block;
     box-sizing: border-box;
 

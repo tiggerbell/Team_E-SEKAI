@@ -14,7 +14,7 @@
 }
 
 .btn-token{
-    background-color: beige;
+    background-color: pink;
     border: none;
     border-radius: 40px;
     width: 100px;
@@ -35,7 +35,7 @@
 }
 
 .select-collect{
-    background-color: beige;
+    background-color: pink;
     border: none;
     border-radius: 10px;
     width: 100px;
@@ -83,8 +83,9 @@ a {
 }
 
 .popular-collect-container > a {
-    background-color: beige;
+    background-color: pink;
     display: flex;
+    border-radius: 0.75rem;
 }
 
 .top-upvote-title-flex{
@@ -133,4 +134,8 @@ a {
 
 .margin200{
     margin-right: 200px;
+}
+
+.top-nft-wrap > img {
+    border: pink 2px solid;
 }

@@ -17,18 +17,18 @@
 .flex-list{
     display: flex;
     justify-content: space-between;
-    background-color: beige;
+    background-color: pink;
     border-radius: 15px;
     padding-left: 5px;
     padding-right: 5px;
-    border: green solid 1px;
+    border: palevioletred solid 1px;
 }
 
 .account-button{
     width: 93px;
     height: 22.33px;
-    background-color: beige;
-    border: green solid 1px;
+    background-color: pink;
+    border: palevioletred solid 1px;
     border-radius: 0.75rem;
     /* 숨긴 부분 처리 */
     white-space: nowrap;
@@ -43,16 +43,16 @@
 }
 
 .flex-list-item > div{
-    background-color: beige;
+    background-color: pink;
     margin-right: 10px;
     padding: 10px;
     border-radius: 15px;
-    border: green solid 1px;
+    border: palevioletred solid 1px;
 }
 
 .button-style1{
-    background-color: beige;
-    border: green solid 1px;
+    background-color: pink;
+    border: palevioletred solid 1px;
     border-radius: 0.75rem;
     margin-right: 3px;
     cursor: pointer;
@@ -77,14 +77,14 @@
 .sale-box-range{
     width: 500px;
     height: 200px;
-    background-color: beige;
+    background-color: pink;
     padding: 10px 10px 10px 10px;
     border-radius: 0.75rem;
 }
 
 .button-style1-bigger{
-    background-color: beige;
-    border: green solid 1px;
+    background-color: pink;
+    border: palevioletred solid 1px;
     border-radius: 0.75rem;
     margin-right: 3px;
     width: 100px;

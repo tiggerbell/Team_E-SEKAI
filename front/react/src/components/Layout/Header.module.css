@@ -2,7 +2,7 @@
     align-items: center;
     font-size: 40px;
     display: flex;
-    /* border: 1px solid black; */
+    border: 1px solid pink; 
     /* background-color: rgba(245, 245, 220, 0.4); */
 }
 
@@ -11,7 +11,7 @@
     left: 50%;
     margin-top: 60px;
     transform: translate(-50%, -50%);
-    background-color: beige;
+    background-color: pink;
     height: 40px;
     padding: 10px;
     border-radius: 40px; 
@@ -23,7 +23,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #949BA0;
+    background: pink;
+    border: solid palevioletred;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,8 +47,9 @@
     width: 200px;
   }
   
+  /* 호버시 돋보기 원형 변경 */
   .search-box:hover > form .search-btn {
-    background: #464E54;
+    background: palevioletred;
   }
 
   .log-box {
@@ -70,7 +72,6 @@
   .create-user-button{
     all:unset;
     font-size: 20px;
-    
     width: 200px;
     padding-left: 25px;
   }
@@ -89,12 +90,12 @@
 
   .notion{
     width: 50px;
-    border-right: black solid 1px;
+    border-right: palevioletred solid 2px;
     cursor: pointer;
   }
 
   .notion:hover{
-    background-color: red;
+    background-color: palevioletred;
     transition: 0.7s; 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -103,11 +104,11 @@
 
   .my-page{
      width: 50px;
-     border-right: black solid 1px;
+     border-right: palevioletred solid 2px;
   }
 
   .my-page:hover{
-    background-color: red;
+    background-color: palevioletred;
     transition: 0.7s; 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -115,7 +116,7 @@
   }
 
   .create-user:hover {
-    background-color: blue;
+    background-color: pink;
     transition: 0.7s; 
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -123,7 +124,7 @@
   }
 
   .create-user-button:hover {
-    background-color: blue;
+    background-color: pink;
     transition: 0.7s; 
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -135,8 +136,8 @@
     position: absolute;
     width: 229px;
     height: 200px;
-    background-color: beige;
-    border: green solid 1px;
+    background-color: pink;
+    border: palevioletred solid 2px;
     border-radius: 0.75rem;
     z-index: 999;
   }

@@ -11,7 +11,7 @@
 }
 
 .p1-left{
-    border: blue solid 1px;
+    border: pink solid 2px;
     width: 600px;
     height: 1000px;
     border-radius: 15px;
@@ -19,7 +19,7 @@
 }
 
 .p1-right{
-    border: red solid 1px;
+    border: pink solid 2px;
     width: 850px;
     height: 1000px;
     border-radius: 15px;
@@ -63,7 +63,7 @@ header{
 }
 
 .border-1{
-    border-bottom: blue solid 1px;
+    border-bottom: pink solid 1px;
 }
 
 .padding-left{
@@ -81,12 +81,11 @@ p{
 
 hr{
     margin: 0;
-    border: blue solid 0.5px;
+    border: pink solid 0.5px;
 }
 
 .section-box{
     margin-left: 20px;
-    /* background: green; */
     width: 810px;
     height: 50px;
     display: flex;
@@ -115,8 +114,8 @@ hr{
 }
 
 .button-style1{
-    background-color: beige;
-    border: green solid 1px;
+    background-color: pink;
+    border: palevioletred solid 1px;
     border-radius: 0.75rem;
     margin-right: 3px;
     cursor: pointer;
