@@ -119,7 +119,7 @@ const MyItem = (props) => {
                     <span>
                       <FaEthereum/>{saleNft}
                     </span>
-                  </div>
+                  </div><br />
                   <button className={classes['button-style1-bigger']}>Sale items</button>
                 </div>
              

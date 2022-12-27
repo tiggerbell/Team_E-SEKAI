@@ -78,6 +78,8 @@
     width: 500px;
     height: 200px;
     background-color: beige;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0.75rem;
 }
 
 .button-style1-bigger{
