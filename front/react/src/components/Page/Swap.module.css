@@ -1,12 +1,13 @@
 .padding-left360{
     padding-left: 360px;
     padding-top: 50px;
+    display: flex;
 }
 
 .swap-box{
     width: 380px;
     height: 800px;
-    background-color: beige;
+    background-color: pink;
     border-radius: 25px;
 }
 
@@ -16,7 +17,7 @@
 
 .input-token{
     text-align: right;
-    background-color: green;
+    background-color: palevioletred;
     color: white;
     border-radius: 25px;
     width: 345px;
@@ -40,7 +41,7 @@
 
 .swap-token-button{
     margin-top: 40px;
-    background-color: green;
+    background-color: palevioletred;
     color:white;
     border: none;
     border-radius: 25px;
@@ -56,8 +57,8 @@
     display: flex;
 }
 
-.green-font{
-    color: green;
+.palevioletred-font{
+    color: palevioletred;
 }
 
 .margin-right{
@@ -70,7 +71,7 @@
 }
 
 .switch-token-btn{
-    background-color: green;
+    background-color: palevioletred;
     width: 50px;
     height: 50px;
     border-radius: 1.75rem;
@@ -82,3 +83,11 @@
     height: 30px;
 }
 
+.current-situation{
+    margin-left: 60px;
+    padding: 20px 20px 20px 20px;
+    width: 380px;
+    height: 400px;
+    background-color: pink;
+    border-radius: 25px;
+}

@@ -4,8 +4,8 @@
 }
 
 .button-style1{
-    background-color: beige;
-    border: green solid 1px;
+    background-color: pink;
+    border: palevioletred solid 1px;
     border-radius: 0.75rem;
     margin-left: 5px;
     cursor: pointer;
@@ -14,7 +14,7 @@
 .flex-minting-box{
     display: flex;
     border-radius: 0.75rem;
-    border: green solid 1px;
+    border: palevioletred solid 1px;
     width: 1000px;
 }
 
@@ -25,3 +25,4 @@
 .margine-rigth10{
     margin-right: 10px;
 }
+

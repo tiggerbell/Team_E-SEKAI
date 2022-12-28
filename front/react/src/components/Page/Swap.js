@@ -1,18 +1,27 @@
-import React,{useState} from 'react'
+import React,{useState, useRef} from 'react'
 import SideNav from '../Layout/SideNav';
 import classes from './Swap.module.css'
 import { FaEthereum } from "react-icons/fa" ;   
 import {SiKaios} from 'react-icons/si';
 import {BsFillArrowDownCircleFill} from 'react-icons/bs';
+import Clock from 'react-live-clock'
 
 const Swap = ({isSwap,setIsSwap}) => {
   const [changeKai, setChageKai] = useState(null);
   const [changeEth, setChageEth] = useState(null);
   const [inputNum, setInputNum] = useState(false);
-   
-  const swapTokenHandler = () => {
+  const inputEth = useRef();
+  const inputKai = useRef();
+
+  // 가운데 ↓ 버튼 말하는거임 
+  const swapChageTokenHandler = () => {
     setIsSwap(isSwap=> !isSwap)
-    console.log(isSwap);
+  }
+
+  // Swap이라고 써진 버튼 말하는거임
+  const _SwapTokenHandler = () => {
+    inputKai.current.value='';
+    inputEth.current.value='';
   }
 
   const onChageKai = (event) =>{
@@ -21,6 +30,7 @@ const Swap = ({isSwap,setIsSwap}) => {
     if(inputNum == null){
         setInputNum(false);
     }
+    
   }
 
   const onChangeEth = (event) =>{
@@ -30,7 +40,6 @@ const Swap = ({isSwap,setIsSwap}) => {
         setInputNum(false);
     }
   }
-
 
   return (
     <div>
@@ -57,7 +66,8 @@ const Swap = ({isSwap,setIsSwap}) => {
                         type="number" 
                         defaultValue={changeKai || ''}
                         placeholder="0.0"
-                        onChange={onChangeEth}/>
+                        onChange={onChangeEth}
+                        ref={inputKai}/>
                     </label>
                 </>
                 :
@@ -70,7 +80,8 @@ const Swap = ({isSwap,setIsSwap}) => {
                             type="number"
                             onChange={onChageKai}
                             defaultValue={changeEth || ''}
-                            placeholder="0.0"/>
+                            placeholder="0.0"
+                            ref={inputEth}/>
                           </div>
                         </label>
                 </>
@@ -82,7 +93,7 @@ const Swap = ({isSwap,setIsSwap}) => {
             >
                 <button 
                     className={classes['switch-token-btn']}
-                    onClick={swapTokenHandler}>
+                    onClick={swapChageTokenHandler}>
                     <BsFillArrowDownCircleFill className={classes['BsFillArrowDownCircleFill']}/>
                 </button>
             </div>
@@ -98,7 +109,8 @@ const Swap = ({isSwap,setIsSwap}) => {
                         type="number" 
                         defaultValue={changeKai || ''}
                         placeholder="0.0"
-                        onChange={onChangeEth}/>
+                        onChange={onChangeEth}
+                        ref={inputKai}/>
                     </label>
                 </>
                 :
@@ -111,7 +123,8 @@ const Swap = ({isSwap,setIsSwap}) => {
                             type="number"
                             onChange={onChageKai}
                             defaultValue={changeEth || ''}
-                            placeholder="0.0"/>
+                            placeholder="0.0"
+                            ref={inputEth} />
                             </div>
                         </label>
                 </>
@@ -129,6 +142,7 @@ const Swap = ({isSwap,setIsSwap}) => {
                 <>
                     <button 
                         className={classes['swap-token-button']}
+                        onClick={_SwapTokenHandler}
                     >Swap</button>
                 </>
                 :
@@ -139,11 +153,16 @@ const Swap = ({isSwap,setIsSwap}) => {
                     >Enter an amount</button>
                 </>
             }
-          
-
+        </div>
+        <div className={classes['current-situation']}>
+            <h1>Current-Situation</h1>
+            <h4>※!caution!※ liquidity so much</h4>
+            <div>
+                <Clock format={''} ticking={true} timezone={'US/Pacific'}/>
+            </div><br />
+            <div>1Eth <FaEthereum/> = 100KAI <SiKaios/></div>
         </div>
        </div>
-
 
     </div>
   )

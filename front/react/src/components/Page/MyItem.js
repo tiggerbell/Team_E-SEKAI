@@ -97,9 +97,25 @@ const MyItem = (props) => {
             </div>
 
             <div className={classes['item-list']}>
-              <div>내가 가지고 있는 NFT1 </div>
-              <div>내가 가지고 있는 NFT2 </div>
-              <div>내가 가지고 있는 NFT3</div>
+                <div className={classes['img-setting']}>
+                  <img
+                    src="https://gateway.pinata.cloud/ipfs/QmbRt8xZ38XyPmjvScexCaQ1G4ViwiB3rrALvK8UqwH2SD/c14.PNG" alt=""
+                    width="200"
+                    height="200" />
+                    <div></div>
+                </div>
+                <div className={classes['img-setting']}>
+                  <img 
+                    src="https://gateway.pinata.cloud/ipfs/QmbRt8xZ38XyPmjvScexCaQ1G4ViwiB3rrALvK8UqwH2SD/c4.png" alt="" 
+                    width="200"
+                    height="200" />
+                </div>
+                <div className={classes['img-setting']}>
+                  <img 
+                    src="https://gateway.pinata.cloud/ipfs/QmbRt8xZ38XyPmjvScexCaQ1G4ViwiB3rrALvK8UqwH2SD/c8.png" alt="" 
+                    width="200"
+                    height="200" />
+                </div>
                 <div className={classes['sale-box-range']}>
                   <div className={classes['sale-box']}>
                     <div>Item Price</div>
@@ -122,8 +138,6 @@ const MyItem = (props) => {
                   </div><br />
                   <button className={classes['button-style1-bigger']}>Sale items</button>
                 </div>
-             
-       
             </div>
 
             

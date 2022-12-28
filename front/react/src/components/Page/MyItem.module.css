@@ -91,3 +91,13 @@
     height: 40px;
     cursor: pointer;
 }
+
+
+.img-setting{
+    border-radius: 0.75rem;
+    border: 2px solid pink;
+}
+
+.img-setting > img{
+    border-radius: 0.75rem;
+}
