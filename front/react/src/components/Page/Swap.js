@@ -158,7 +158,7 @@ const Swap = ({isSwap,setIsSwap}) => {
             <h1>Current-Situation</h1>
             <h4>※!caution!※ liquidity so much</h4>
             <div>
-                <Clock format={''} ticking={true} timezone={'US/Pacific'}/>
+                <Clock format={''} ticking={true} timezone={'KR/Pacific'}/>
             </div><br />
             <div>1Eth <FaEthereum/> = 100KAI <SiKaios/></div>
         </div>

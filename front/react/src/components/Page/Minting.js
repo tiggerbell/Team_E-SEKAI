@@ -14,7 +14,6 @@ const Minting = () => {
   const onChangeInputMinting = (e) => {
     setInputMintAmount(e.target.value);
     console.log(inputMintAmount);
-    
   }
 
   const mintingButtonHandler = () => {
