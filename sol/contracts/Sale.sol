@@ -3,11 +3,14 @@
 pragma solidity ^0.8.17;
 
 import "../node_modules/openzeppelin-solidity/contracts/access/Ownable.sol";
-import "sol/contracts/MintNFT .sol";
+import "./MintNFT.sol";
+
+import "../node_modules/openzeppelin-solidity/contracts/utils/Strings.sol";
 
 // operator address 를
 contract Sale is Ownable {
-    address mintAddress; 
+    address mintAddress;
+    
     MintNFT mintContract; // import한 것
 
     //  property의 타입 => value의 타입
@@ -19,6 +22,11 @@ contract Sale is Ownable {
         mintAddress = _mintAddress;
         mintContract = MintNFT(_mintAddress); // mintNFT 에 만들어둔 함수를 사용할 수 있게 됨
         // mintNFT.함수명으로 다른 컨트랙트에 있는 함수를 사용할 수 있음
+    }
+
+    // Token info 구조체
+    struct TokenInfo{
+        uint tokenId;
     }
 
     function setPermission() public {
@@ -56,5 +64,21 @@ contract Sale is Ownable {
         // 토큰 구매자에게 넘겨줄때 리스팅이 안된 상태로 넘겨줘야 하기때문에, 안그러면 누군가가 바로 구매하면 소유권이 넘어갈 수 있기 때문임
         tokenPrices[_tokenId] = 0; // 가격을 0으로 바꿔줘서 토큰이 리스팅 안되어있다고 설정해줘야함
 
+    }
+
+    // 소유한 nft 보여주는 함수
+        function getOwnerToken(address _tokenOwner) public view returns (TokenInfo[] memory){
+        uint balance = mintContract.balanceOf(_tokenOwner);
+        require(balance != 0);
+        // balance크기의 빈 배열 만들기 list
+        TokenInfo[] memory list = new TokenInfo[](balance);
+
+        for (uint i = 0; i < balance; i++) {
+            // 토큰 소유자의 토큰을 순서대로 가져올 아이디
+            uint tokenId = mintContract.tokenOfOwnerByIndex(_tokenOwner, i);
+
+            list[i] = TokenInfo(tokenId);
+        }
+        return list;
     }
 }

@@ -1,30 +1,43 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
 import SideNav from '../Layout/SideNav';
-import classes from './Swap.module.css'
-import { FaEthereum } from "react-icons/fa" ;   
+import classes from './Swap.module.css';
+import { FaEthereum } from "react-icons/fa";
 import {SiKaios} from 'react-icons/si';
 import {BsFillArrowDownCircleFill} from 'react-icons/bs';
+import Clock from 'react-live-clock';
 
-const Swap = ({buy, setEthInputValue, kaiBalance, ethBalance}) => {
-  const [changeKai, setChageKai] = useState(null);
-  const [inputNum, setInputNum] = useState(false);
+const Swap = ({tokenSwap, setKAiInputValue, setEthInputValue, kaiInputValue, ethInputValue, kaiBalance, ethBalance, isSwap, setIsSwap}) => {
 
+    const [inputNum, setInputNum] = useState(false);
+    
+    const swapTokenHandler = () => {
+    setIsSwap(isSwap=> !isSwap)
+    console.log(isSwap);
+    }
 
-  
-  const onChageKai = (event) =>{
+    const onChageKai = (event) =>{
     setEthInputValue(event.target.value);
-    setChageKai(event.target.value * 100);
+    setKAiInputValue(event.target.value * 100);
     setInputNum(true);
     if(inputNum == null){
         setInputNum(false);
     }
-  }
+    }
+
+    const onChangeEth = (event) =>{
+    setKAiInputValue(event.target.value);
+    setEthInputValue(event.target.value / 100);
+    setInputNum(true);
+    if(inputNum == null){
+        setInputNum(false);
+    }
+    }
 
 
-  return (
+    return (
     <div>
-       <SideNav />
-       <div className={classes['padding-left360']}>
+        <SideNav />
+        <div className={classes['padding-left360']}>
         <div className={classes['swap-box']}>
             {/* 상단의 옵션 Trade tokens in an instant 부분 */}
             <div className={classes['swap-setting']}>
@@ -35,34 +48,78 @@ const Swap = ({buy, setEthInputValue, kaiBalance, ethBalance}) => {
             </div>
 
             <hr className={classes['hr-nomal']}/> <br />
-
-            <div className={classes['token-name']}><FaEthereum/>ETH</div> <div>{ethBalance}</div>
-            <label htmlFor="">
-                <div>
-                    <input 
+            {
+                isSwap == true
+                ?
+                <>
+                    <div className={classes['token-name']}><SiKaios/>KAI</div><div>{kaiBalance}</div> 
+                    <label htmlFor="">
+                        <input 
                         className={classes['input-token']}
-                        type="number"
-                        onChange={onChageKai}
+                        type="number" 
+    
+                        defaultValue={ kaiInputValue|| ''}
                         placeholder="0.0"
-                        />
-                </div>
-                <div>
-                    {/* 나중에 이더변환 가격 넣을 div */}
-                </div>
-            </label>
+                        onChange={onChangeEth}/>
+                    </label>
+                </>
+                :
+                <>
+                    <div className={classes['token-name']}><FaEthereum/>ETH</div><div>{ethBalance}</div>
+                        <label htmlFor="">
+                            <div>
+                            <input 
+                            className={classes['input-token']}
+                            type="number"
+                            
+                            defaultValue={ ethInputValue|| ''}
+                            placeholder="0.0"
+                            onChange={onChageKai}/>
+                            </div>
+                        </label>
+                </>
+            }
             
-            <div className={classes['text-align-center']}><BsFillArrowDownCircleFill/></div>
+            <div 
+                className={classes['text-align-center']}
+                // onClick={''}
+            >
+                <button 
+                    className={classes['switch-token-btn']}
+                    onClick={swapTokenHandler}>
+                    <BsFillArrowDownCircleFill className={classes['BsFillArrowDownCircleFill']}/>
+                </button>
+            </div>
             
-            <div className={classes['token-name']}><SiKaios/>KAI</div> <div>{kaiBalance}</div>
-
-            <label htmlFor="">
-                <input 
-                    className={classes['input-token']}
-                    type="number" 
-                    defaultValue={changeKai || ''}
-                    placeholder="0.0"
-                    />
-            </label>
+            {
+                isSwap == false
+                ?
+                <>
+                    <div className={classes['token-name']}><SiKaios/>KAI</div><div>{kaiBalance}</div> 
+                    <label htmlFor="">
+                        <input 
+                        className={classes['input-token']}
+                        type="number" 
+                        defaultValue={ kaiInputValue|| ''}
+                        placeholder="0.0"
+                        onChange={onChangeEth}/>
+                    </label>
+                </>
+                :
+                <>
+                    <div className={classes['token-name']}><FaEthereum/>ETH</div><div>{ethBalance}</div>
+                        <label htmlFor="">
+                            <div>
+                            <input 
+                            className={classes['input-token']}
+                            type="number"
+                            defaultValue={ ethInputValue|| ''}
+                            placeholder="0.0"
+                            onChange={onChageKai}/>
+                            </div>
+                        </label>
+                </>
+            }
 
             <div className={classes['slippage-tolerance-box']}>
                 <div className={classes['margin-right']}>Slippage Tolerance</div>
@@ -74,7 +131,7 @@ const Swap = ({buy, setEthInputValue, kaiBalance, ethBalance}) => {
                 inputNum == true
                 ?
                 <>
-                    <button onClick={buy}
+                    <button onClick={tokenSwap}
                         className={classes['swap-token-button']}
                     >Swap</button>
                 </>
@@ -86,14 +143,20 @@ const Swap = ({buy, setEthInputValue, kaiBalance, ethBalance}) => {
                     >Enter an amount</button>
                 </>
             }
-          
-
         </div>
-       </div>
+        <div className={classes['current-situation']}>
+            <h1>Current-Situation</h1>
+            <h4>※!caution!※ liquidity so much</h4>
+            <div>
+                <Clock format={''} ticking={true} timezone={'KR/Pacific'}/>
+            </div><br />
+            <div>1Eth <FaEthereum/> = 100KAI <SiKaios/></div>
+        </div>
+        </div>
 
 
     </div>
-  )
+    )
 }
 
 export default Swap

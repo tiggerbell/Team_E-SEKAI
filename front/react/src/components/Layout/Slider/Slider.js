@@ -20,7 +20,13 @@ export default class SimpleSlider extends Component {
       // 한 화면에 보이는 콘텐츠 개수를 말한다.
       slidesToShow: 1,
       // 한 번에 넘어가는 콘텐츠 수이다. 2로 정하면 2개씩 넘어간다.
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      // 자동 스크롤 사용 여부
+      autoplay : true,
+      // 속도
+      autoplaySpeed : 3000,       
+      arrows : false,       // 옆으로 이동하는 화살표 표시 여부
+      
     };
 
     return (
@@ -50,12 +56,12 @@ export default class SimpleSlider extends Component {
             </div>
             
           </div>
-          <div className={classes['slider-range']}>
+          {/* <div className={classes['slider-range']}>
             <h3>3번째 slide</h3>
           </div>
           <div className={classes['slider-range']}>
             <h3>4번째 slide</h3>
-          </div>
+          </div> */}
         </Slider>
       </div>
     );

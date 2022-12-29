@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import esLogoImg from '../../assets/esLogo.png'
 import classes from './Header.module.css'
-import { CgUserAdd, CgSearch, CgUser } from "react-icons/cg";
+import { CgSearch, CgUser } from "react-icons/cg";
 import useWeb3 from '../../hooks/useWeb3'
 import {FaRegBell} from "react-icons/fa"
 import {Link} from 'react-router-dom';
@@ -13,8 +13,8 @@ import { useWeb3React } from '@web3-react/core';
 import { injected } from '../../lib/connectors';
 
 
-const Header = () => {
-    const [walletToggle, setWalletToggle] = useState(false);
+const Header = (props) => {
+  const [walletToggle, setWalletToggle] = useState(false);
 
   const openWalletToggleHandler = () => {
     setWalletToggle(true) 
@@ -24,11 +24,11 @@ const Header = () => {
     setWalletToggle(false)
   }
 
-  if (typeof window.ethereum !== 'undefined') {
-    console.log('MetaMask is installed!');
-  }
+  // 메타마스크 깔려 있는지 여부 확인 
+  // if (typeof window.ethereum !== 'undefined') {
+  //    console.log('MetaMask is installed!');
+  // }
 
-  
 
   const {
     connector, // 현재 dapp에 연결된 월렛의 connector 값
@@ -46,25 +46,20 @@ const Header = () => {
     activate(injected, async(error)=>{
       // 에러 처리 코드 생략
     })
-    console.log(active)
   }
 
   // 연결 해제
   const onClickDeactivateHandler = () => {
-    console.log("너 실행되니?")
-    deactivate();
-    console.log("너도?")
-    console.log(active)
+    deactivate(); // connector._events.Web3ReactDeactivate() 이거랑 같은건데
   }
 
-  
+
   return (
     <div className={classes['eslogo-box']}>
         <img src={esLogoImg} alt="es로고이미지" />
         <Link to='/'>
           <div>E-SEKAI</div>
         </Link>
-
         {/* 검색창 */}
         <div className={classes['search-box']}>
             <form>
@@ -99,18 +94,18 @@ const Header = () => {
                   walletToggle && 
                    <div className={classes['wallet-toggle']}>
                       <div>
-                        <Link to = "/myitem" ><GiToken/>My items</Link> 
+                        <Link to = "/myitem" onClick={props.view} ><GiToken/> My items</Link> 
                         <button 
                           onClick={closeWalletToggleHandler}
-                          className={classes['close']}>x</button>
+                          className={classes['closeX']}>x</button>
                       </div>
                       <div>
-                        <Link><GrUserSettings/>Profile settings</Link> 
+                        <Link><GrUserSettings/> Profile settings</Link> 
                       </div>
                       <div>
                         <button
                           onClick={onClickDeactivateHandler}
-                          ><BiUser/>Sign out</button>
+                          ><BiUser/> Sign out</button>
                       </div>
                    </div>
                  }
@@ -120,13 +115,11 @@ const Header = () => {
                 <div className={classes['my-page']}><CgUser/></div>
                 <button
                   className={classes['create-user-button']}
-                  onClick={onClickActivateHandler}
-                >
+                  onClick={onClickActivateHandler}>
                   Connect Wallet</button>
               </>
             }
         </div>
-
     </div>
   )
 }

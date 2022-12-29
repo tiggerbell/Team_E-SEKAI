@@ -3,7 +3,7 @@ import SideNav from '../Layout/SideNav'
 import Slider from '../Layout/Slider/Slider'
 import classes from './Main.module.css'
 import { FaEthereum } from "react-icons/fa" ;   
-import { SiDogecoin } from "react-icons/si";
+import { SiKaios } from "react-icons/si";
 import { Link } from 'react-router-dom';
 import topNft1 from '../../assets/c_millenia_pfp_1668187735016.webp'
 import popCollect1 from '../../assets/fCgR75fYed__y5HRYdFV5R0NTNorqquwS_MkpnuvFNA.png'
@@ -66,13 +66,13 @@ const Main = (props) => {
               <>
                 <button 
                 className={classes['btn-token-selected']}
-                onClick={dogeHandler}><div><span><SiDogecoin/> Doge</span></div></button> 
+                onClick={dogeHandler}><div><span><SiKaios/> Kai</span></div></button> 
               </>
               :
               <>
                 <button 
                 className={classes['btn-token']}
-                onClick={dogeHandler}><div><span><SiDogecoin/> Doge</span></div></button>
+                onClick={dogeHandler}><div><span><SiKaios/> Kai</span></div></button>
               </>
             }
 
@@ -362,29 +362,58 @@ const Main = (props) => {
               </div>
             </div>
             </Link>
+    
 
             <div className={classes['top-nft-wrap']}>
               <img 
-                src={topNft1} alt="topNft1"
+                 src="https://gateway.pinata.cloud/ipfs/QmbRt8xZ38XyPmjvScexCaQ1G4ViwiB3rrALvK8UqwH2SD/c15.jpeg"  alt="topNft1"
                 width="218" height="165" />
+              <div className={classes['author']}>
+                <div>Choi Ha</div>
+              </div>
+              <div className={classes['like-create-at-flex-gap-1']}>
+                <div className={classes['like-color-red']}>🧡328</div>
+                <div>Dec 17, 09:00</div>
+              </div>
             </div>
 
             <div className={classes['top-nft-wrap']}>
               <img 
-                src={topNft1} alt="topNft2"
+                src="https://gateway.pinata.cloud/ipfs/QmbRt8xZ38XyPmjvScexCaQ1G4ViwiB3rrALvK8UqwH2SD/c14.PNG" alt="topNft1"
                 width="218" height="165" />
+              <div className={classes['author']}>
+                <div>An Ju</div>
+              </div>
+              <div className={classes['like-create-at-flex-gap-1']}>
+                <div className={classes['like-color-red']}>🧡18</div>
+                <div>Dec 27, 09:00</div>
+              </div>
+            </div>
+         
+            <div className={classes['top-nft-wrap']}>
+              <img 
+              src="https://gateway.pinata.cloud/ipfs/QmbRt8xZ38XyPmjvScexCaQ1G4ViwiB3rrALvK8UqwH2SD/c4.png" alt="topNft1"
+                width="218" height="165" />
+              <div className={classes['author']}>
+                <div>무명</div>
+              </div>
+              <div className={classes['like-create-at-flex-gap-1']}>
+                <div className={classes['like-color-red']}>🧡2</div>
+                <div>Dec 29, 09:00</div>
+              </div>
             </div>
 
             <div className={classes['top-nft-wrap']}>
               <img 
-                src={topNft1} alt="topNft3"
+                src="https://gateway.pinata.cloud/ipfs/QmbRt8xZ38XyPmjvScexCaQ1G4ViwiB3rrALvK8UqwH2SD/c8.png" alt="topNft1"
                 width="218" height="165" />
-            </div>
-
-            <div className={classes['top-nft-wrap']}>
-              <img 
-                src={topNft1} alt="topNft4"
-                width="218" height="165" />
+              <div className={classes['author']}>
+                <div>무명</div>
+              </div>
+              <div className={classes['like-create-at-flex-gap-1']}>
+                <div className={classes['like-color-red']}>🧡777</div>
+                <div>Dec 31, 09:00</div>
+              </div>
             </div>
 
           </div>

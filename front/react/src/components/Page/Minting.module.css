@@ -1,0 +1,27 @@
+.padding-left360{
+    padding-left: 360px;
+    padding-top: 50px;
+}
+
+.button-style1{
+    background-color: pink;
+    border: palevioletred solid 1px;
+    border-radius: 0.75rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.flex-minting-box{
+    display: flex;
+    border-radius: 0.75rem;
+    border: palevioletred solid 1px;
+    width: 1000px;
+}
+
+.flex{
+    display: flex;
+}
+
+.margine-rigth10{
+    margin-right: 10px;
+}

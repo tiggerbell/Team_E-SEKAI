@@ -1,178 +1,164 @@
 .eslogo-box{
-    align-items: center;
-    font-size: 40px;
-    display: flex;
-    /* border: 1px solid black; */
-    /* background-color: rgba(245, 245, 220, 0.4); */
+  align-items: center;
+  font-size: 40px;
+  display: flex;
+  border: 1px solid pink; 
+  /* background-color: rgba(245, 245, 220, 0.4); */
 }
 
 .search-box {
-    position: absolute;
-    left: 50%;
-    margin-top: 60px;
-    transform: translate(-50%, -50%);
-    background-color: beige;
-    height: 40px;
-    padding: 10px;
-    border-radius: 40px; 
-  }
-  
-  .search-btn {
-    color: #EDEDED;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #949BA0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .search-txt {
-    float: left;
-    padding: 0;
-    background: none;
-    border: none;
-    outline: none;
-    color: black;
-    font-size: 15px;
-    line-height: 40px;
-    width: 0; 
-    transition: 0.5s; 
-  }
-  
-  .search-box:hover > form .search-txt {
-    width: 200px;
-  }
-  
-  .search-box:hover > form .search-btn {
-    background: #464E54;
-  }
+  position: absolute;
+  left: 50%;
+  margin-top: 60px;
+  transform: translate(-50%, -50%);
+  background-color: pink;
+  height: 40px;
+  padding: 10px;
+  border-radius: 40px; 
+}
 
-  .log-box {
-    display: flex;
-    position: absolute;
-    right: 30px;
-    border: 1px solid black;
-    border-radius: 15px;
-    width: 230px;
-    height: 50px;
-  }
+.search-btn {
+  color: #EDEDED;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: pink;
+  border: solid palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .create-user{
-    font-size: 20px;
-    padding-top: 10px;
-    width: 200px;
-    padding-left: 25px;
-  }
+.search-txt {
+  float: left;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 15px;
+  line-height: 40px;
+  width: 0; 
+  transition: 0.5s; 
+}
 
-  .create-user-button{
-    all:unset;
-    font-size: 20px;
-    
-    width: 200px;
-    padding-left: 25px;
-  }
+.search-box:hover > form .search-txt {
+  width: 200px;
+}
 
-  .account-box{
-    font-size: 20px;
-    padding-top: 10px;
-    width: 200px;
-    padding-left: 25px;
-    /* 숨긴 부분 처리 */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    cursor: pointer;
-  }
+/* 호버시 돋보기 원형 변경 */
+.search-box:hover > form .search-btn {
+  background: palevioletred;
+}
 
-  .notion{
-    width: 50px;
-    border-right: black solid 1px;
-    cursor: pointer;
-  }
-  /* .account-box:hover{
-    background-color: blue;
-    transition: 0.7s; 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 200px;
-  } */
+.log-box {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  border: 2px solid palevioletred;
+  border-radius: 15px;
+  width: 230px;
+  height: 50px;
+}
 
-  .my-page{
-     width: 50px;
-     border-right: black solid 1px;
-  }
+.create-user{
+  font-size: 20px;
+  padding-top: 10px;
+  width: 200px;
+  padding-left: 25px;
+}
 
-  .my-page:hover{
-    background-color: red;
-    transition: 0.7s; 
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 50px;
-  }
+.create-user-button{
+  all:unset;
+  font-size: 20px;
+  width: 200px;
+  padding-left: 25px;
+}
 
-  .create-user:hover {
-    background-color: blue;
-    transition: 0.7s; 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 200px;
-  }
+.account-box{
+  font-size: 20px;
+  padding-top: 10px;
+  width: 200px;
+  padding-left: 25px;
+  /* 숨긴 부분 처리 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
 
-  .create-user-button:hover {
-    background-color: blue;
-    transition: 0.7s; 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 200px;
-  }
-  
-  .wallet-toggle{
-    position: absolute;
-    width: 229px;
-    height: 200px;
-    background-color: aquamarine;
-    z-index: 999;
-  }
+.notion{
+  width: 50px;
+  border-right: palevioletred solid 2px;
+  cursor: pointer;
+}
+
+.notion:hover{
+  background-color: palevioletred;
+  transition: 0.7s; 
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 50px;
+}
+
+.my-page{
+   width: 50px;
+   border-right: palevioletred solid 2px;
+}
+
+.my-page:hover{
+  background-color: palevioletred;
+  transition: 0.7s; 
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 50px;
+}
+
+.create-user:hover {
+  background-color: pink;
+  transition: 0.7s; 
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 200px;
+}
+
+.create-user-button:hover {
+  background-color: pink;
+  transition: 0.7s; 
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 200px;
+}
+
+.wallet-toggle{
+  margin-top: 35px;
+  position: absolute;
+  width: 229px;
+  height: 200px;
+  background-color: pink;
+  border: palevioletred solid 2px;
+  border-radius: 0.75rem;
+  z-index: 999;
+}
 
 
-  .wallet-toggle > div > a{
-    font-size: x-large;
-  }
- 
+.wallet-toggle > div > a{
+  font-size: x-large;
+}
 
-  .wallet-toggle > div > button {
-    /* 태그 기본 설정 리셋 */
-    all : unset;
-    font-size: x-large;
-    /* position: absolute;
-    right: 0; */
-  }
 
-  .wallet-toggle > div > .close{
-    position: absolute;
-    right: 5px;
-    padding-right: 5px;
-    top: 5px;
-  }
- 
+.wallet-toggle > div > button {
+  /* 태그 기본 설정 리셋 */
+  all : unset;
+  font-size: x-large;
+  /* position: absolute;
+  right: 0; */
+}
 
-  /* .log-box:hover > .my-page{
-    
-    background-color: red;
-    transition: 0.3s; 
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 75px;
-  }
-
-  .log-box:hover > .create-user{
-    
-    background-color: blue;
-    transition: 0.3s; 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 75px; */
-  
+.wallet-toggle > div > .closeX{
+  position: absolute;
+  right: 5px;
+  padding-right: 5px;
+  top: 5px;
+}
