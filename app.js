@@ -22,3 +22,5 @@
 // 4. MintNFT setApprovalForAll에 Sale.sol CA랑 true넣어주기
 // 5. Sale.sol에 setForSale함수에 민팅한 토큰 아이디와 가격 넣기
 // 6. 지갑 다른걸로 바꾸고 가격정한 토큰아이디 적고 가격도 위에 설정해주고 purchase 함수 실행
+
+// git 너어무 화가난다
