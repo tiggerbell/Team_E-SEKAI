@@ -66,11 +66,13 @@ contract KaiToken is ERC20, Ownable {
         tokenTransferSell(owner(),msg.sender, _amount);
         payable(msg.sender).transfer(etherAmount);
     }
+
     // NFT 구매 했을 때 토큰 교환
     function buyNft(uint256 _amount, address from) public payable{
         require(balanceOf(from) >= _amount*rate, "you fucking no Token ok?");
         tokenTransferSell(owner(),from, _amount*rate);
     }
+
     //ERC20에 밑에 두개 함수 추가 하기
     // token 구매
     // function tokenTransferBuy(address owner, address to, uint256 amount) public virtual {
