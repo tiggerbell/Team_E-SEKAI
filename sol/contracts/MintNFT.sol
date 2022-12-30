@@ -5,7 +5,7 @@ pragma solidity ^0.8.17;
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "../node_modules/openzeppelin-solidity/contracts/utils/Strings.sol";
 import "../node_modules/openzeppelin-solidity/contracts/access/Ownable.sol";
-import "./KaiToken.sol";
+import "./Kai2Token.sol";
 
 contract MintNFT is ERC721Enumerable, Ownable {
 
@@ -13,13 +13,13 @@ contract MintNFT is ERC721Enumerable, Ownable {
     // uint public mintPrice;
     string public metadataURI = "https://gateway.pinata.cloud/ipfs/QmSBzdVnV5ZEkWsEnGuSVBUhqnJW2FZTT4jTbySwxh3kYG/";
     
-    KaiToken tokenContract;
+    Kai2Token tokenContract;
 
     // 배포할때 받을 인자 설정해주는 부분 init 함수랑 같은 역할
     constructor(address _tokenAddress) ERC721("HajinChoi", "Choi") {
         metadataURI = metadataURI;
         totalNFT = totalNFT;
-        tokenContract = KaiToken(payable(_tokenAddress));
+        tokenContract = Kai2Token(payable(_tokenAddress));
     }
 
     // erc721에서 _mint 함수가 기본적으로 있지만 한번만 가능하기때문에 
